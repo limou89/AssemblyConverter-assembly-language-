@@ -1,0 +1,61 @@
+op code of I,J instruction
+000001	1	bgez	rs,imm(rt=1)
+		bgezal  rs,imm(rt=17)
+		bltz	rs,imm(rt=0)
+		bltzal	rs,imm(rt=16)
+000010	2	j 	imm		
+000011	3	jal	imm		
+000100	4	beq	rs,rt,imm		
+000101	5	bne	rs,rt,imm		
+000110	6	blez	rs,imm		
+000111	7	bgtz	rs,imm	
+001000	8	addi	rt,rs,imm		
+001001	9	addiu	rt,rs,imm		
+001010	10	slti	rt,rs,imm		
+001011	11	sltiu	rt,rs,imm		
+001100	12	andi	rt,rs,imm
+001101	13	ori	rt,rs,imm		
+001110	14	xori	rt,rs,imm		
+001111	15	lui	rt,imm		
+100000	32	lb	rt,imm(rs)		
+100001	33	lh	rt,imm(rs)		
+100010	34	lwl	rt,imm(rs)		
+100011	35	lw	rt,imm(rs)		
+100100	36	lbu	rt,imm(rs)		
+100101	37	lhu	rt,imm(rs)		
+100110	38	lwr	rt,imm(rs)		
+101000	40	sb	rt,imm(rs)		
+101001	41	sh	rt,imm(rs)		
+101010	42	swl	rt,imm(rs)		
+101011	43	sw	rt,imm(rs)		
+101110	46	swr	rt,imm(rs)		
+
+Fonction code of R(OP=0) instruction   £¨27¸ö£©
+000000	0	sll(Ö¸ÁîÃû£©	rd,rt,sa
+000010	2	srl	rd,rt,sa
+000011	3	sra	rd,rt,sa
+000100	4	sllv	rd,rt,rs
+000110	6	srlv	rd,rt,rs
+000111	7	srav	rd,rt,rs
+001000	8	jr	rs
+001001	9	jalr	rd,rs
+001100	12	syscall
+010000	16	mfhi	rd
+010001	17	mthi	rs
+010010	18	mflo	rd
+010011	19	mtlo	rs
+011000	24	mult	rs,rt
+011001	25	multu	rs,rt
+011010	26	div	rs,rt
+011011	27	divu	rs,rt
+100000	32	add	rd,rs,rt
+100001	33	addu	rd,rs,rt
+100010	34	sub	rd,rs,rt
+100011	35	subu	rd,rs,rt
+100100	36	and	rd,rs,rt
+100101	37	or	rd,rs,rt
+100110	38	xor	rd,rs,rt
+100111	39	nor	rd,rs,rt
+101010	42	slt	rd,rs,rt
+101011	43	sltu	rd,rs,rt
+
